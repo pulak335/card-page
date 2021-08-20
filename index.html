@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Cart</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="flex w-4/5 mx-auto mt-12"> 
+        <section class="w-2/4 mx-2">
+            <img src="images/mac.png" alt="" srcset="">
+        </section>
+        <section class="w-2/4 mx-2">
+            <div>
+                <h1 class="text-4xl font-bold">Apple iMac 24" 4K Retina Display M1 with M1 Chip .</h1>
+                <p class="font-semibold mt-8">The Apple Green (MJV83ZP/A) iMac comes with Apple M1 chip (8 Core CPU and 7 Core GPU), Retina 24" 4K 4096 x 2304 P3 display, 8GB RAM + 256GB SSD, Apple Integrated 7-core GPU, 1080p FaceTime HD camera with M1 ISP.</p>
+            </div>
+            <h1 class="mt-3 text-2xl font-bold">Memory</h1>
+            <div class="mt-3">
+                <button id="ram-8" class="border rounded-md border-gray-700 px-5 py-2">8GB Unified Memory</button>
+                <button id="ram-16" class="border rounded-md border-gray-700 px-5 py-2">16GB Unified Memory</button>
+            </div>
+
+            <h1 class="mt-3 text-2xl font-bold">Storage</h1>
+            <div class="mt-3">
+                <button  id="ssd-256" class="border rounded-md border-gray-700 px-3 py-2">256GB SSD Storage</button>
+                <button id="ssd-512"  class="border rounded-md border-gray-700 px-3 py-2">512GB SSD Storage</button>
+                <button  id="ssd-1024" class="border rounded-md border-gray-700 px-3 py-2">1TB SSD Storage</button>
+            </div>
+
+            <h1 class="mt-3 text-2xl font-bold">Delivery System</h1>
+            <div class="mt-3">
+                <button id="del-0" class="border rounded-md border-gray-700 px-3 py-2">Free Prime Delivery $0</button>
+                <button id="del-20" class="border rounded-md border-gray-700 px-3 py-2">Express Prime Delivery charge $20</button>
+            </div>
+            <div class="grid grid-flow-col grid-cols-2 grid-rows-5 mb-5 mt-5">
+                <h2 class="text-1xl font-medium">Best Price</h2>
+                <h2 class="text-1xl font-medium">Extra Memory Cost</h2>
+                <h2 class="text-1xl font-medium">Extra Storage Cost</h2>
+                <h2 class="text-1xl font-medium"> Delivery Cost</h2>
+                <h1 class="text-1xl font-medium border-t-4">Total Price</h1>
+                <h2 class="text-1xl font-medium">$<span id="best-price">1299</span></h2>
+                <h2 class="text-1xl font-medium">$<span id="ram-price" >0</span></h2>
+                <h2  class="text-1xl font-medium">$<span id="rom-price">0</span></h2>
+                <h2  class="text-1xl font-medium">$<span id="del-price">0</span></h2>
+                <h2 class="text-1xl font-medium border-t-4">$<span id="total-price">1299</span></h2>
+            </div>
+            <h2 class="text-2xl font-medium ">Promo Code</h2>
+            <input class="border-2 rounded-md border-indigo-600 px-2 py-2" type="text" name="" id="promo-input">
+            <button onclick="promoCode()" class="border-2 rounded-md border-indigo-700 px-2 py-2 text-white bg-indigo-400"> Apply</button>
+        </section>
+    </main>
+    <footer>
+        <h1 class="text-4xl font-bold text-center mt-4 mb-4">Total: $<span id="price">1299</span></h1>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
