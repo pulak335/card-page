@@ -91,12 +91,14 @@ del20.addEventListener('click', function () {
     // const promoCon = promo.toLowerCase();
     const promoCode = parseInt(price.innerText);
     const code = 'stevekaku';
-    if (promo == code) {
-        const discount = promoCode - (promoCode * 0.2);
-        price.innerText = discount;
-        promoInput.value = '';
-    }
-    else {
+
+        if (promo == code) {
+            const discount = promoCode - (promoCode * 0.2);
+            price.innerText = discount;
+            promoInput.value = '';
+            // promoInput.disabled = true;
+        }
+    else if(promo != code) {
         alert('Discount promo code not valid');
         promoInput.value = '';
     }
