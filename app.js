@@ -96,7 +96,7 @@ del20.addEventListener('click', function () {
             const discount = promoCode - (promoCode * 0.2);
             price.innerText = discount;
             promoInput.value = '';
-            // promoInput.disabled = true;
+            promoInput.disabled = true;
         }
     else if(promo != code) {
         alert('Discount promo code not valid');
