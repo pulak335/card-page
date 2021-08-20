@@ -94,9 +94,11 @@ del20.addEventListener('click', function () {
     if (promo == code) {
         const discount = promoCode - (promoCode * 0.2);
         price.innerText = discount;
+        promoInput.value = '';
     }
     else {
         alert('Discount promo code not valid');
+        promoInput.value = '';
     }
 }
 
